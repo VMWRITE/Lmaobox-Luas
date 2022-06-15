@@ -1,3 +1,11 @@
+--[[
++--------+---------------+----------------------------------------------------+
+| Author |     Name      |                    Description                     |
++--------+---------------+----------------------------------------------------+
+| Ozaron | Catbot Marker | Mark you as CAT. Other catbots should ignoring you |
++--------+---------------+----------------------------------------------------+
+]]
+
 local timers = {}
 local timer = {}
 function timer.Create(name, delay, times, func)
