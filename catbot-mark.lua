@@ -48,9 +48,23 @@ timer.Create("catIdentify", 15, 9999999999999999999999, function()
     local kv = [[
         "AchievementEarned"
         {
+            "achievementID" "0xCA7"
+        }
+    ]]
+        
+    if engine.SendKeyValues(kv) then
+        client.ChatPrintf("\x04[CatBot] \x02You marked as:\x05 CAT")
+    else
+        client.ChatPrintf("\x04[CatBot] \x02Failed to mark as:\x05 CAT")
+    end
+        
+    local kv = [[
+        "AchievementEarned"
+        {
             "achievementID" "0xCA8"
         }
     ]]
+        
     if engine.SendKeyValues(kv) then
         client.ChatPrintf("\x04[CatBot] \x02You marked as:\x05 CAT")
     else
